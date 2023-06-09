@@ -1,16 +1,62 @@
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'poppins', sans-serif;
 }
 
-body{
+p{
+    line-height: 1.6 !important;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+body {
     font-size: 18px;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-weight: 400, 700;
 }
 
-header{
+header {
     background-image: url(TOP\ BACKGRD.svg);
     height: 600px;
     background-color: lightblue;
@@ -23,7 +69,7 @@ header{
 }
 
 .bottomhalf {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -31,52 +77,62 @@ header{
     margin: 50px;
 }
 
-.tophalf .top2{
+.tophalf .top2 {
     margin: 50px;
-    box-shadow: 9px 3px 5px 3px lightblue;
+    box-shadow: 2px 3px 5px 3px lightblue;
 }
 
-.tophalf .top2{
+.tophalf .top2 {
     border: 0;
     padding: 10px 30px;
     border-radius: 35px;
     background-color: white;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
-.toplogo{
+
+
+
+.toplogo {
     width: 150px;
 }
 
-.bottomhalf .top3{
-    max-width: 100%;
+.bottomhalf .top3 {
+    max-width: 40%;
 }
 
 .top3 {
     margin: 80px 10px 0 50px;
 }
 
-.bottomhalf h1{
+.top3-content {
+    line-height: 1.6;
+}
+
+
+.bottomhalf h1 {
     font-family: 'poppins' sans-serif;
     font-weight: bolder;
     margin-bottom: 30px;
     line-height: 50px;
 }
-.top4{
-    margin:0 50px 0 20px;   
+
+.top4 {
+    margin: 0 50px 0 20px;
 }
 
-button{
-    margin:25px 0 0 0;
-    padding:15px 70px;
+button {
+    margin: 25px 0 0 0;
+    padding: 18px 70px;
     background-color: hsl(322, 100%, 66%);
     border-radius: 50px;
     color: white;
     font-weight: bold;
     border: 0;
-    box-shadow: 1px 5px 5px 2px rgb(157, 199, 213);
 }
 
-.no1{
+.no1 {
     display: flex;
     width: 90%;
     height: 400px;
@@ -86,21 +142,22 @@ button{
     border-radius: 18px;
 }
 
-.no1 .leftbox{
-    margin-top: 120px;
+.no1 .leftbox {
+    margin: auto;
     padding: 0 90px 0 50px;
 }
 
-.leftbox h2{
+.leftbox h2 {
     margin-bottom: 15px;
 }
 
-.leftbox p{
+.leftbox p {
     line-height: 25px;
     color: gray;
+    width: 80%;
 }
 
-.no2{
+.no2 {
     display: flex;
     flex-direction: row-reverse;
     width: 90%;
@@ -111,21 +168,22 @@ button{
     border-radius: 18px;
 }
 
-.no2 .leftbox2{
-    margin-top: 100px;
-    padding: 0 20px 0 100px;
+.no2 .leftbox2 {
+    margin: auto;
+    padding: 0 0px 0 150px;
 }
 
-.leftbox2 h2{
+.leftbox2 h2 {
     margin-bottom: 15px;
 }
 
-.leftbox2 p{
+.leftbox2 p {
     line-height: 25px;
     color: gray;
+    width: 80%;
 }
 
-.no3{
+.no3 {
     display: flex;
     width: 90%;
     height: 400px;
@@ -135,18 +193,19 @@ button{
     border-radius: 18px;
 }
 
-.no3 .leftbox3{
-    margin-top: 100px;
+.no3 .leftbox3 {
+    margin: auto;
     padding: 0 90px 0 20px;
 }
 
-.leftbox3 h2{
+.leftbox3 h2 {
     margin-bottom: 15px;
 }
 
-.leftbox3 p{
+.leftbox3 p {
     line-height: 25px;
     color: gray;
+    width: 80%;
 }
 
 .sub:nth-child(4) {
@@ -158,151 +217,165 @@ button{
 }
 
 .minor:nth-child(1) {
-    transform: translate(280px, 100px);
+    transform: translate(0px, 100px);
     height: 250px;
-    width: 714px;
+    width: 50%;
+    margin: 0 auto;
     background-color: white;
     box-shadow: 1px 1px 5px 1px grey;
     border-radius: 18px;
     padding-top: 60px;
 }
 
-.case{
-    font-weight:bold;
+.case {
+    font-weight: bold;
     font-size: 30px;
 }
 
-.brief{
-    margin:25px 0 0 0;
-    padding:22px 90px;
+.brief {
+    margin: 25px 0 0 0;
+    padding: 22px 90px;
     background-color: hsl(322, 100%, 66%);
     border-radius: 50px;
     color: white;
     font-weight: bold;
     border: 0;
-    box-shadow: 1px 5px 5px 2px rgb(157, 199, 213);
     font-size: 17px;
 }
+
 .minor {
     text-align: center;
     line-height: 45px;
 }
 
 footer {
-    background-color: black;
+    background-color: hsl(192, 100%, 9%);
     height: 500px;
-    margin: 0px;
+    padding: 1rem;
 }
 
 .container {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     color: #fff;
     font-size: 15px;
 }
-.box1{
+
+.box1 {
     width: 290px;
-    margin-top: 180px;
+    margin-top: 100px;
     height: 200px;
 }
 
-.box2{
+.box2 {
     width: 290px;
-    margin-top: 180px;
+    margin-top: 130px;
 }
 
-.box3{
+.box3 {
     width: 290px;
-    margin-top: 180px;
+    margin-top: 130px;
 }
 
-.box4{
+.box4 {
     width: 290px;
-    margin-top: 180px;
-}
-.space1{
-    margin-top: 30px;
+    margin-top: 130px;
 }
 
-.space2{
-    margin-top: 20px;
-}
 
-.space3{
-    margin-top: 20px;
-}
 
-.move1{
+.move1 {
     margin-top: 70px;
     margin-left: 40px;
 }
-.move1 a{
+
+.move1 a {
     text-decoration: none;
     color: #fff;
 }
-.move2{
-    margin-top:35px;
+
+.move2 {
+    margin-top: 35px;
     margin-left: 40px;
 }
-.move2 a{
+
+.move2 a {
     text-decoration: none;
     color: #fff;
 }
 
-.move3{
-    margin-top:35px;
+.move3 {
+    margin-top: 35px;
     margin-left: 40px;
 }
-.move3 a{
+
+.move3 a {
     text-decoration: none;
     color: #fff;
 }
 
 
-.slide1{
+.slide1 {
     margin-top: 70px;
     margin-left: 40px;
 }
-.slide1 a{
+
+.slide1 a {
     text-decoration: none;
     color: #fff;
 }
-.slide2{
-    margin-top:35px;
+
+.slide2 {
+    margin-top: 35px;
     margin-left: 40px;
 }
-.slide2 a{
+
+.slide2 a {
     text-decoration: none;
     color: #fff;
 }
 
-.slide3{
-    margin-top:35px;
+.slide3 {
+    margin-top: 35px;
     margin-left: 40px;
 }
-.slide3 a{
+
+.slide3 a {
     text-decoration: none;
     color: #fff;
 }
 
-.box4 a{
+.box4 a {
     color: #fff;
     text-decoration: none;
 }
 
-.fill1{
-     margin-top: 65px;
+.fill1 {
+    margin-top: 65px;
 }
 
-.fill2{
+.fill2 {
     margin-top: 105px;
 }
 
 
 
+.footer-logo{
+    filter: brightness(0) invert(1);
+    display: block;
+    margin-bottom: 1rem;
+}
 
+footer span{
+    display: flex;
+    margin: 1.3rem;
+}
 
+span p{
+    display: inline;
+    margin-left: 1rem;
+}
 
-
-
-
+span i{
+    margin: auto 0;
+}
