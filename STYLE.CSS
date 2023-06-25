@@ -33,19 +33,6 @@ p{
     background: #555;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 a {
     text-decoration: none;
 }
@@ -378,4 +365,28 @@ span p{
 
 span i{
     margin: auto 0;
+}
+
+@media(max-width:600px) {
+    .tophalf {
+        flex-direction: column;
+    }
+    .bottomhalf {
+        flex-direction: column;
+    }
+    .no1 {
+        flex-direction: column;
+    }
+    .no2 {
+        flex-direction: column;
+    }
+    .no3 {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    footer span {
+        flex-direction: column;
+    }
 }
